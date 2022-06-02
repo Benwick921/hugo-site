@@ -1,0 +1,42 @@
+title = "Jafor"
+baseURL = "https://benwick921.github.io"
+theme = "researcher"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT"]
+enableEmoji = true
+math = false  # enable KaTeX (https://katex.org/) globally
+
+[params]
+  author = "Jafor"
+  description = "Jafor's Website."
+  favicon = "favicon.jpg"  # path to a .ico to use as favicon
+  [params.footer]
+    text = "Jafor"
+    url = "https://github.com/benwick921"
+
+[permalinks]
+  "/" = "/:filename"
+
+[menu]
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 2
+  [[menu.main]]
+    name = "Writeups"
+    url = "/writeups"
+    weight = 3
+  [[menu.main]]
+    name = "Resources"
+    url = "/resources"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 5
+  
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in markdown files
